@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathias V Lund - Portfolio</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="theme-toggle" aria-label="Toggle theme">
+    <i data-lucide="sun"></i>
+    <span>Switch Theme</span>
+  </button>
+
+  <div class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <section class="hero min-h-screen flex-center relative">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold text-gray-800 mb-4">
+          Mathias V Lund's <br> Portofilo
+        </h1>
+        <p class="text-xl text-gray-600 mb-8">
+          Full Stack Developer
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/Refusetheblade" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://www.instagram.com/mathiasv.lund/" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="https://x.com/refusethebIade" class="social-icon">
+            <i data-lucide="x"></i>
+          </a>
+        </div>
+      </div>
+      <button class="scroll-button" onclick="scrollToSection('about')">
+        <i data-lucide="chevron-down"></i>
+      </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-white">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <img 
+            src="Main_img.jpg" 
+            alt="Profile" 
+            class="profile-image"
+          />
+          <div class="about-text">
+            <p>
+                Welcome to my portfolio! I am a web developer with a passion for creating visually stunning, user-friendly websites. With a focus on HTML, CSS, and JavaScript, I specialize in building responsive websites tailored to meet the unique needs of my clients. Whether you're looking for a simple landing page, a multi-page business site, or a custom-built web experience, I deliver high-quality, SEO-optimized solutions that provide a seamless user experience across all devices.
+                Explore my work below to see how I can help bring your website vision to life. Let’s create something amazing together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section bg-gray-50">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img 
+              src="Valkyri.png"
+              alt="Online store i've maid for my own clothing brand. Work in progress"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Valkyri e-commerce</h3>
+              <p class="project-description">
+                I created the website for my own clothing brand, Valkyri, to showcase and sell my designs. While the website is still in progress, it marks a strong starting point for the brand’s online presence. The site includes key features for e-commerce, allowing customers to browse products, view collections, and make purchases. I am continually working on updates and improvements every week, aiming to enhance the user experience and expand the site's functionality as the brand grows.
+            </p>
+              <div class="project-links">
+                <a href="https://refusetheblade.github.io/Valkyri/" class="project-link">
+                  View Project <i data-lucide="external-link" class="icon-small"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img 
+              src="FjordmatUB.png"
+              alt="A project i worked on with the cheff class at my earlier school."
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Fjordmat UB - School Restaurant Website</h3>
+              <p class="project-description">
+                For a school project, I helped develop the website for Fjordmat UB, a student-run restaurant that prepares and sells food made at school. I contributed to creating a user-friendly site where customers can explore the menu and place orders, gaining valuable experience in building real-world business solutions.
+            </p>
+              <div class="project-links">
+                <a href="https://refusetheblade.github.io/Fjordmat-UB/" class="project-link">
+                  View Project <i data-lucide="external-link" class="icon-small"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img 
+              src="ScriptEXE.png"
+              alt="Executer"
+              class="project-image"
+            />
+            <div class="project-content">
+              <h3 class="project-title">soulEXE – Roblox Executor
+            </h3>
+              <p class="project-description">
+I developed soulEXE, a powerful Roblox executor, using C++ and C#. This tool allows users to run custom scripts within Roblox, enhancing their gaming experience with added functionalities and automation. The project showcases my skills in C++ and C#, focusing on creating a high-performance, user-friendly executor. It’s designed to provide a seamless experience for Roblox users looking to unlock advanced features and custom scripts within the game.
+            </p>
+              <div class="project-links">
+                <a href="https://github.com/Refusetheblade/Soul-exe" class="project-link">
+                  View Source Code <i data-lucide="external-link" class="icon-small"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section bg-white">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">HTML, CSS</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">C++</div>
+          <div class="skill-item">C#</div>
+          <div class="skill-item">Python</div>
+          <div class="skill-item">Lua</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-gray-50">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Mathias V Lund. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
